@@ -1,0 +1,9 @@
+node_modules/**/*
+package-lock.com
+yarn.lock 
+.expo/*
+npm-debug.*
+*.jks
+*.p12
+*.key
+*.mobileprovision
