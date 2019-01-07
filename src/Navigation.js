@@ -22,7 +22,8 @@ const AuthStack = createStackNavigator({
     } 
 });
    
-const AdminStack = createStackNavigator({ 
+const AdminStack = createStackNavigator({  
+
     AdminWelcome: {
         screen: AdminWelcome,
         navigationOptions: {
@@ -38,18 +39,18 @@ const AdminStack = createStackNavigator({
     AttestApproveList: {
         screen: AttestApproveList,
         navigationOptions: {
-          headerTitle: 'Register'
+          headerTitle: 'For Approval'
         }
     },
     AttestApprove: {
         screen: AttestApprove,
         navigationOptions: {
-          headerTitle: 'Register'
+          headerTitle: 'Approve Attestation'
         }
     } 
 });
 
-const PatienStack = createStackNavigator({ 
+const PatientStack = createStackNavigator({ 
     PatientWelcome: {
         screen: PatientWelcome,
         navigationOptions: {
@@ -90,9 +91,10 @@ const PatienStack = createStackNavigator({
 });
 const AppNavigator = createSwitchNavigator (
     {
+        Auth: AuthStack,
         Admin: AdminStack,
-        Patient: PatienStack,
-        Auth: AuthStack
+        Patient: PatientStack,
+       
     },
     {
         initialRouteName: 'Auth'

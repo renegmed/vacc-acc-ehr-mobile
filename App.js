@@ -7,10 +7,9 @@ export default class App extends React.Component {
   render() {
 
     const AppContainer = createAppContainer(AppNavigator); 
-
+ 
     return ( 
-        <AppContainer /> 
-      
+        <AppContainer />  
     );
   }
 }
